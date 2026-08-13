@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>State Service Finder - Search</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <span class="logo-icon">🏛️</span>
+      <span class="logo-text">State Service Finder</span>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="search.html" class="active">Search</a></li>
+        <li><a href="credits.html">Credits</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="search-header">
+      <h1>Find Assistance Programs</h1>
+      <p>Select your state and the area of support you need, then click Search.</p>
+    </section>
+
+    <div class="search-box">
+      <div class="form-group">
+        <label for="state-select">Select State:</label>
+        <select id="state-select">
+          <option value="CT">Connecticut</option>
+          <option value="ME">Maine</option>
+          <option value="MA">Massachusetts</option>
+          <option value="NH">New Hampshire</option>
+          <option value="NJ">New Jersey</option>
+          <option value="NY">New York</option>
+          <option value="PA">Pennsylvania</option>
+          <option value="RI">Rhode Island</option>
+          <option value="VT">Vermont</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="category-select">Select Issue / Need:</label>
+        <select id="category-select">
+          <option value="All">All Categories</option>
+          <option value="Food">🍎 Food Assistance</option>
+          <option value="Housing">🏠 Housing Assistance</option>
+          <option value="Healthcare">🏥 Healthcare</option>
+          <option value="Utilities">💡 Utilities & Energy</option>
+          <option value="Cash">💵 Finacial Assistance</option>
+        </select>
+      </div>
+
+      <button id="search-btn" class="btn btn-primary">Search</button>
+    </div>
+
+    <div id="results-container" class="results-container">
+      <p class="placeholder-text">Select your options above and click Search to display matching programs.</p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
